@@ -1,0 +1,110 @@
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: center;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  body{
+    background-color: #333;
+    font-family: monospace;
+    position: fixed;
+  }
+  .leftside{
+    margin-top: 10%;
+    left: 0;
+    background-color: white;
+    text-align: center;
+    bottom: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+  }
+  .rightside{
+    margin-top: 10%;
+    right: 0;
+    background-color: burlywood;
+    text-align: center;
+    text-align: justify;
+    overflow: hidden;
+  }
+
+  p{
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 20px;
+  }
+
+
+  .split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  .parent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100%;
+    margin-bottom: 200%;
+    margin-left:265% ;
+    margin-right:200% ;
+  }
+  
+  .child {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+    border-radius: 50%;
+    margin: 0 5px;
+  }
+  
+  .child:hover {
+    background-color: white;
+    background-position: -100px 100px, -100px 100px;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+    transform: perspective(180px) rotateX(60deg) translateY(2px);
+    box-shadow: 0px 10px 10px rgb(1, 49, 182);
+  }
+  
+  button {
+    border: none;
+    background-color: transparent;
+    font-size: 60px;
+    display: block;
+  }
+  
+  .button:hover {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate3d(0px, 0px, 15px) perspective(180px) rotateX(-35deg) translateY(2px);
+    border-radius: 50%;
+  }
+  
+  
